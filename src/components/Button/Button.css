@@ -1,0 +1,88 @@
+:root {
+  --primary: #4628ff;
+  --warning: #ffd028;
+  --danger: #eb3f27;
+  --success: #75fa83;
+  --white: #fdfdfd;
+  --dark: #181717;
+}
+
+.btn {
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bolder;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 6px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+.btn--primary--solid {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.btn--warning--solid {
+  background-color: var(--warning);
+  color: var(--dark);
+  border: none;
+}
+
+.btn--danger--solid {
+  background-color: var(--danger);
+  color: var(--white);
+  border: none;
+}
+.btn--success--solid {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+}
+.btn--primary--outline {
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn--black--border {
+  background-color: rgba(200, 191, 234, 0.2);
+
+  border: 2px solid black;
+  color: black;
+}
+
+.btn--warning--outline {
+  background-color: transparent;
+  border: 2px solid var(--warning);
+  color: var(--warning);
+}
+
+.btn--danger--outline {
+  background-color: transparent;
+  border: 2px solid var(--danger);
+  color: var(--danger);
+}
+
+.btn--success--outline {
+  background-color: transparent;
+  border: 2px solid var(--success);
+  color: var(--success);
+}
+
+.btn--medium {
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.btn--small {
+  padding: 3px 7px;
+  font-size: 12px;
+}
+.btn--large {
+  padding: 8px 15px;
+  font-size: 20px;
+}

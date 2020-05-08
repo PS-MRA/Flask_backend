@@ -1,0 +1,13 @@
+input {
+  margin-right: 15px;
+  width: 100px;
+  height: 25px;
+  border-radius: 7px;
+  border-style: solid;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+input:hover {
+  transform: translateY(-3px);
+}

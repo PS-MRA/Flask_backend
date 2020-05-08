@@ -1,0 +1,59 @@
+Type,Current_Screen,Elements,Visible_Condition,Clickable_Condition,End_Screen,Sprite_Name,Font_Name,String
+button,home,Menu,TRUE,TRUE,settings,#menu.png,,
+button,home,FB login and play button,fblogin = False,TRUE,FBlogin webview,res/png/Button_270.png,,
+image,home,FB icon in login button,fblogin = False,TRUE,FBlogin webview,#fb_home.png,,
+text,home,FB login and play text,fblogin = False,TRUE,FBlogin webview,,sfcompact_medium_110,LOGIN & PLAY
+image,home,free tag,fblogin = False,TRUE,FBlogin webview,#free_tag.png,,
+button,home,Play as guest button,fblogin = False,TRUE,puzzle,Button_190.png,,
+text,home,play as guest text,fblogin = False,TRUE,puzzle,,sfcompact_medium_90,PLAY AS GUEST
+text,home,fb connect & sync text,fblogin = False,FALSE,puzzle,,sfcompact_medium_60,Connect & sync your progress across devices
+text,home,shadow fb connect & sync text,fblogin = False,FALSE,puzzle,,sfcompact_medium_60,
+text,home,Game title,TRUE,FALSE,,,sfcompact_regular_200,WORD TRIP
+number,home,Knowledge value,pc>0,TRUE,puzzle,,,
+text,home,Knowledge,pc>0,TRUE,puzzle,,,
+image,home,Tree image,TRUE,TRUE,puzzle,#wisdom_tree_2.png,,
+image,home,BGimage,TRUE,FALSE,,res/png/country_background/Genric-BG.jpg,,
+button,home,Let's play button,fblogin = True,TRUE,puzzle,,,
+button,home,How to play,fblogin = True,TRUE,how_to_play,,,
+button,puzzle,back,TRUE,TRUE,,,,
+button,puzzle,quest center,TRUE,quest_data = True,quest_center,,,
+button,puzzle,menu,TRUE,TRUE,settings,,,
+button,puzzle,w2e,TRUE,first click = True,w2e_1,,,
+button,puzzle,w2e,TRUE,videos available = True,ads container,,,
+button,puzzle,hint,TRUE,coins >= hint_price,puzzle,,,
+button,puzzle,shuffle,TRUE,TRUE,puzzle,,,
+button,puzzle,burst hint locked,pc < 50,pc < 50,puzzle,,,
+button,puzzle,burst hint enabled,pc > 50,pc > 50,puzzle,,,
+number,puzzle,coins value,TRUE,TRUE,new_store_v2,,,
+icon,puzzle,coins,TRUE,TRUE,new_store_v2,,,
+icon,puzzle,add coins,TRUE,TRUE,new_store_v2,,,
+text,puzzle,Country name,TRUE,FALSE,,,,
+text,puzzle,level details,TRUE,FALSE,,,,
+text,puzzle,solved by ,TRUE,FALSE,,,,
+collection,puzzle,grid,TRUE,FALSE,,,,
+collection,puzzle,letters,TRUE,TRUE,puzzle,,,
+image,puzzle,letter plate,TRUE,FALSE,,,,
+text,settings,Screen title text,TRUE,FALSE,,,sfcompact_regular_120,MENU
+toggle,settings,Music icon,TRUE,TRUE,settings,"#Icon_Music_On.png, #Icon_Music_Off.png",,
+text,settings,Music text,TRUE,TRUE,settings,,sfcompact_light_80,Music
+toggle,settings,Sound icon,TRUE,TRUE,settings,"#Icon_Sound_On.png, #Icon_Sound_Off.png",,
+text,settings,Sound text,TRUE,TRUE,settings,,sfcompact_light_80,Sound
+toggle,settings,voice overs icon,TRUE,TRUE,settings,"#voice_over_on.png, ##voice_over_off.png",,
+text,settings,voice overs text,TRUE,TRUE,settings,,sfcompact_light_80,Voice Overs
+icon,settings,Quest center icon,TRUE,TRUE,settings,#quest_icon.png,,
+text,settings,Quest center text,TRUE,TRUE,quest_center,,sfcompact_light_80,Quest Center
+icon,settings,Quest center coins icon,TRUE,TRUE,quest_center,#coins_1.png,,
+text,settings,Quest center New tag,Not visited Questcenter,TRUE,quest_center,,sfcompact_regular_40,New
+icon,settings,Login & play icon,fblogin = False,TRUE,FBlogin webview,#Icon_Facebook_1.png,,
+text,settings,Login & play text,fblogin = False,TRUE,FBlogin webview,,sfcompact_light_80,Login & Play
+icon,settings,Login & play coins icon,fblogin = False,TRUE,FBlogin webview,#Icon_Coins.png,,
+text,settings,Login & play + 100 coins,fblogin = False,TRUE,FBlogin webview,,sfcompact_medium_70,"""+ 100"""
+icon,settings,Ask friends icon,TRUE,TRUE,Native Share screen,#Ask.png,,
+text,settings,Ask friends text,TRUE,TRUE,Native Share screen,,sfcompact_light_80,Ask Friends
+text,settings,How to play text,TRUE,TRUE,how_to_play,,sfcompact_light_80,How To Play
+icon,settings,How to play icon,TRUE,TRUE,how_to_play,#Icon_How_To_Play.png,,
+text,settings,Contact us text,TRUE,TRUE,support,,sfcompact_light_80,Contact Us
+icon,settings,Contact us icon,TRUE,TRUE,support,#Icon_Contact_Us.png,,
+text,settings,More games text,TRUE,TRUE,Adwall,,sfcompact_light_80,More Games
+image,settings,More games button image,TRUE,TRUE,Adwall,/data/user/0/in.playsimple.wordtrip/files/moreGamesIcon.png,,
+,,Rate Us,TRUE,TRUE,,,,
