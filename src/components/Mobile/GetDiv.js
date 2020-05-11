@@ -6,7 +6,6 @@ class GetDiv extends Component {
     const {
       value,
       FTUE_Z_ORDER,
-      zindexChoice,
       qaLogs,
       elementType,
       clicked,
@@ -19,19 +18,16 @@ class GetDiv extends Component {
       addMessage
     } = this.props
 
-//    console.log("&^&^&^&&^&")
-//    console.log(getExperimentsButton)
+    var zindexChoice = document.getElementById("zindex").checked
 
     if (value["zindex"] < FTUE_Z_ORDER && zindexChoice) {
-      return
+      return null
     }
     if (value["zindex"] >= FTUE_Z_ORDER && !zindexChoice) {
-      return
+      return null
     }
     if (!elementType.includes(value["elementType"])) {
-//      console.log("OOOOOOOOOOO")
       elementType.push(value["elementType"])
-//      console.log(elementType)
     }
     if (value["elementType"] !== "ScrollView" && getExperimentsButton == 0) {
       return (
@@ -58,8 +54,6 @@ class GetDiv extends Component {
     } else if (getExperimentsButton !== 0 && exp_logs.length) {
       var exp_var_ui = ""
       const items = []
-//      console.log("In get expppppppppp")
-//      console.log(value["variant"])
       for (var k = 0; k < value["variant"].length; k++) {
         var exp_name = value["variant"][k]["name"]
         if (value["chosenVarinat"] === exp_name) {
@@ -85,7 +79,7 @@ class GetDiv extends Component {
             height: "80px",
             marginTop: "10px",
             marginBottom: "5px",
-            fontSize:"40px"
+            fontSize: "40px"
           }}
           onChange={updateExperiment}
           id={value["expName"]}
@@ -96,7 +90,6 @@ class GetDiv extends Component {
         </select>
       )
     } else {
-      //
       return <p>Hello</p>
     }
   }
