@@ -1,5 +1,5 @@
 
-WS_URL = "ws://192.168.0.103:7681"
+WS_URL = "ws://192.168.0.101:7681"
 SCREENSHOTS_PATH = "screenshots/"
 BOT_LOG_FILE_NAME = "botlog.csv"
 PUZZLE_JSON_3 = "/Users/mohammedansari/word_treat/scripts/puzzles_3.json"
